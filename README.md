@@ -1,4 +1,4 @@
-# **Instagram Profile Scraper:** <br>
+# **Instagram Scraper:** <br>
 A powerful Python-based web scraping tool that extracts comprehensive data from Instagram profiles using Selenium for browser automation and BeautifulSoup for HTML parsing.
 
 # **🚀 Features:** <br>
@@ -60,5 +60,6 @@ python manage.py runserver
 
 Access the application:
 Open your browser and go to http://127.0.0.1:8000/
+
 
 
