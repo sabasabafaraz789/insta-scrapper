@@ -1,0 +1,9 @@
+<h2>Instagram Scraper</h2>
+<form method="POST" action="{% url 'scrape_instagram' %}">
+  {% csrf_token %}
+  <div class="form-group">
+    <label for="link">Instagram Profile Link:</label>
+    <input type="url" name="profile_url" class="form-control" id="link" placeholder="Enter Instagram profile link" required>
+  </div>
+  <button type="submit" class="btn btn-primary">Scrape Data</button>
+</form>

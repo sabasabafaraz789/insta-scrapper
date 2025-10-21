@@ -1,0 +1,16 @@
+<div class="section">
+  <h2>Highlights</h2>
+  {% if data.highlights %}
+    {% for h in data.highlights %}
+    <div style="margin-left:1rem; margin-bottom:1rem;">
+      <div class="field"><span class="label">Title:</span> <span class="value">{{ h.title }}</span></div>
+      <div class="field"><span class="label">Cover:</span> <a href="{{ h.cover_url }}" target="_blank" class="value">View Image</a></div>
+      <div class="field"><span class="label">Alt Text:</span> <span class="value">{{ h.alt_text }}</span></div>
+      <div class="field"><span class="label">Has Canvas:</span> <span class="value">{{ h.has_canvas }}</span></div>
+      <div class="field"><span class="label">Position:</span> <span class="value">{{ h.position }}</span></div>
+    </div>
+    {% endfor %}
+  {% else %}
+    <p>No highlights data available. Please scrape data first.</p>
+  {% endif %}
+</div>

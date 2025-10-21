@@ -1,0 +1,13 @@
+<div class="section">
+  <h2>Profile</h2>
+  {% if data.profile %}
+  <div class="field"><span class="label">Username:</span> <span class="value">{{ data.profile.username }}</span></div>
+  <div class="field"><span class="label">Full Name:</span> <span class="value">{{ data.profile.full_name }}</span></div>
+  <div class="field"><span class="label">Bio:</span> <span class="value">{{ data.profile.bio }}</span></div>
+  <div class="field"><span class="label">Profile Picture URL:</span> <a href="{{ data.profile.profile_picture_url }}"
+      target="_blank" class="value">View Image</a></div>
+  <div class="field"><span class="label">Verified:</span> <span class="value">{{ data.profile.is_verified }}</span></div>
+  {% else %}
+  <p>No profile data available. Please scrape data first.</p>
+  {% endif %}
+</div>

@@ -1,0 +1,17 @@
+<div class="section">
+  <h2>Posts</h2>
+  {% if data.posts %}
+    {% for post in data.posts %}
+    <div style="margin-left:1rem; margin-bottom:1rem;">
+      <div class="field"><span class="label">Post URL:</span> <a href="{{ post.url }}" target="_blank" class="value">{{ post.url }}</a></div>
+      <div class="field"><span class="label">Post ID:</span> <span class="value">{{ post.post_id }}</span></div>
+      <div class="field"><span class="label">Thumbnail:</span> <a href="{{ post.thumbnail_url }}" target="_blank" class="value">View Image</a></div>
+      <div class="field"><span class="label">Caption:</span> <span class="value">{{ post.caption|default:"(No caption)" }}</span></div>
+      <div class="field"><span class="label">Media Type:</span> <span class="value">{{ post.media_type }}</span></div>
+      <div class="field"><span class="label">Pinned:</span> <span class="value">{{ post.is_pinned }}</span></div>
+    </div>
+    {% endfor %}
+  {% else %}
+    <p>No posts data available. Please scrape data first.</p>
+  {% endif %}
+</div>
