@@ -1,7 +1,7 @@
-Instagram Profile Scraper
+# **Instagram Profile Scraper:** <br>
 A powerful Python-based web scraping tool that extracts comprehensive data from Instagram profiles using Selenium for browser automation and BeautifulSoup for HTML parsing.
 
-🚀 Features
+# **🚀 Features:** <br>
 🔐 Smart Session Management
 Cookie-based authentication for persistent login sessions
 
@@ -20,7 +20,7 @@ Post Details: Media URLs, captions, post types (image/reel/carousel), pinned sta
 
 Story Highlights: Titles, cover images, positioning data﻿# insta-                                                 
 
-🛡 Security & Ethics
+**🛡 Security & Ethics:** <br>
 Environment variable support for sensitive data
 
 Secure session storage with pickle serialization
@@ -30,7 +30,7 @@ Input validation and comprehensive error handling
 Clear usage guidelines to promote ethical scraping practices
 
 
-🚀 Quick Start
+**🚀 Quick Start:** <br>
 Make sure Python is installed in your environment.
 
 Clone git repository:
@@ -60,3 +60,4 @@ python manage.py runserver
 
 Access the application:
 Open your browser and go to http://127.0.0.1:8000/
+
