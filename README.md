@@ -30,7 +30,7 @@ Input validation and comprehensive error handling
 Clear usage guidelines to promote ethical scraping practices
 
 
-**🚀 Quick Start:** <br>
+# **🚀 Quick Start:** <br>
 Make sure Python is installed in your environment.
 
 Clone git repository:
@@ -60,4 +60,5 @@ python manage.py runserver
 
 Access the application:
 Open your browser and go to http://127.0.0.1:8000/
+
 
